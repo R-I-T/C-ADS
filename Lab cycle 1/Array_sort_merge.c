@@ -7,7 +7,7 @@ int main()
     printf("\nEnter the size of second array ");
     scanf("%d",&n2);
     n3=n1+n2;
-    printf("\nEnter the sorted array elements");
+    printf("\nEnter the First array elements");
     int a[n1],b[n2],c[n3];
     for(int i=0;i<n1;i++)
     {
@@ -15,18 +15,14 @@ int main()
        c[i]=a[i];
     }
     int k=n1;
-    printf("\nEnter the sorted array elements");
+    printf("\nEnter the Second array elements");
     for(int i=0;i<n2;i++)
     {
         scanf("%d",&b[i]);
         c[k]=b[i];
         k++;
     }
-    printf("\nThe merged array..\n");
-    for(int i=0;i<n3;i++)
-    printf("%d ",c[i]);
-
-    printf("\nAfter sorting...\n");
+    printf("\nAfter Sort and Merge\n");
     for(int i=0;i<n3;i++)
     {
         int temp;
@@ -43,7 +39,7 @@ int main()
 
     for(int i=0;i<n3;i++)
     {
-        printf(" %d ",c[i]);
+        printf("%d" " ",c[i]);
     }
     return 0;
 }
