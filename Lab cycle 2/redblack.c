@@ -1,5 +1,3 @@
-// Implementing Red-Black Tree in C
-
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -14,8 +12,6 @@ struct rbNode {
 };
 
 struct rbNode *root = NULL;
-
-// Create a red-black tree
 struct rbNode *createNode(int data) {
   struct rbNode *newnode;
   newnode = (struct rbNode *)malloc(sizeof(struct rbNode));
@@ -24,8 +20,6 @@ struct rbNode *createNode(int data) {
   newnode->link[0] = newnode->link[1] = NULL;
   return newnode;
 }
-
-// Insert an node
 void insertion(int data) {
   struct rbNode *stack[98], *ptr, *newnode, *xPtr, *yPtr;
   int dir[98], ht = 0, index;
