@@ -1,4 +1,3 @@
-
 #include<stdio.h>
 #include<stdlib.h>
 #define size 4
@@ -6,8 +5,8 @@ void insert();
 void delete();
 void traversal();
 void search();
-int rear=-1,front=-1;
 
+int rear=-1,front=-1;
 int queue[size],item;
 
 void main()
@@ -70,16 +69,12 @@ void delete()
  item=queue[front];
  front=rear=-1;
  }
-
 else
 {
 item=queue[front];
 front=(front+1)%size;
 }
 }
-
-
-
 void traversal()
 {
 if(front==-1 && rear==-1)
