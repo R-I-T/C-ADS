@@ -19,7 +19,7 @@ if(cost[i][j]==0)
 cost[i][j]=999;
 }
 }
-printf("The edges of iinimum Cost Mpanning Tree are\n");
+printf("The edges of minimum Cost spanning Tree are\n");
 while(ne < n)
 {
 for(i=1,min=999;i<=n;i++)
@@ -43,7 +43,7 @@ mincost +=min;
 }
 cost[a][b]=cost[b][a]=999;
 }
-printf("\n\tiinimum cost = %d\n",mincost);
+printf("\n\tMinimum cost = %d\n",mincost);
 }
 int find(int i)
 {
